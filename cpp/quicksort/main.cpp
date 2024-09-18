@@ -24,10 +24,7 @@ int partition(vector<int>& vector, int low, int high) {
 	return i + 1;
 }
 
-void quickSort(vector<int>& vector) {
-
-	int low = 0;
-	int high = vector.size() - 1;
+void quickSort(vector<int>& vector, int low, int high) {
 
 	if(low < high) {
 		int pi = partition(vector, low, high);
@@ -40,7 +37,7 @@ void quickSort(vector<int>& vector) {
 
 int main(){
 	vector<int> vector = { 1,8,10,3,15,2 };
-	quickSort(vector);
+	quickSort(vector, 0, vector.size() - 1);
 
 	for(int i = 0; i < vector.size(); i++) {
 		cout<<vector[i]<<endl;
