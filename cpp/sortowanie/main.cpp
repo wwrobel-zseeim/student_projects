@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main(){
-	vector<int> vector { 1,5,6,7,10,15,20,30,40 };
+void bubbleSort(vector<int>& vector){
 	int i, j;
 	bool swapped;
 
@@ -24,9 +23,4 @@ int main(){
 
 	}
 
-	for(i = 0; i < vector.size(); i++) {
-		cout<<vector[i]<<endl;
-	}
-
-	return 0;
 }

@@ -35,16 +35,4 @@ void quickSort(vector<int>& vector, int low, int high) {
 
 }
 
-int main(){
-
-	vector<int> vector = { 1,8,10,3,15,2 };
-	quickSort(vector, 0, vector.size() - 1);
-
-	for(int i = 0; i < vector.size(); i++) {
-		cout<<vector[i]<<endl;
-	}
-
-	return 0;
-}
-
 
