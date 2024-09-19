@@ -32,10 +32,11 @@ void quickSort(vector<int>& vector, int low, int high) {
 		quickSort(vector, low, pi - 1);
 		quickSort(vector, pi + 1, high);
 	}
-	
+
 }
 
 int main(){
+
 	vector<int> vector = { 1,8,10,3,15,2 };
 	quickSort(vector, 0, vector.size() - 1);
 
