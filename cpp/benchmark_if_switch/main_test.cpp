@@ -94,7 +94,7 @@ TEST(BenchmarkTest, SwitchBenchmarkCaseFirst) {
 
 TEST(BenchmarkTest, SwitchBenchmarkCaseNotFirst) {
 
-	int x = 26;
+	int x = 3;
 
 	auto start = std::chrono::high_resolution_clock::now();
 
