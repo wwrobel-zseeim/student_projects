@@ -7,4 +7,4 @@ Z testu przeprowadzonego na 10000 losowych liczbach, wyniki są następujące:
 
 Z tego wynika, że algorytm QuickSort jest około 100 razy szybszy od algorytmu sortowania bąbelkowego.
 
-![Wynik sortowania](./wynik_sortowanie.png)
+![Wynik sortowania](./wynik_sortowanie.PNG)
