@@ -6,11 +6,11 @@ lancuch fizzbuzz(calkowita n) {
 
 	lancuch zwracajacy przypisz "";
 
-	jezeli(n reszta_z_dzielenia 3 rowne 0) {
+	jezeli(n reszta_z_dzielenia trzy rowne zero) {
 		zwracajacy += "Fizz";
 	}
 
-	jezeli(n reszta_z_dzielenia 5 rowne 0) {
+	jezeli(n reszta_z_dzielenia piec rowne zero) {
 		zwracajacy += "Buzz";
 	}
 

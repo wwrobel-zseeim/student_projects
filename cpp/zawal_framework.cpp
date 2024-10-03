@@ -58,3 +58,6 @@
 #define nowy new
 #define to this
 #define wskaznik *
+#define zero 0
+#define trzy 3
+#define piec 5
