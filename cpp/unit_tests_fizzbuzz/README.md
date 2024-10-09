@@ -9,7 +9,7 @@ Zostały napisane testy, które sprawdzają czy napisana funkcja działa poprawn
 - Czy nic nie zostało zwrócone dla liczby 8 (liczba nie jest podzielna przez 3 ani 5)
 ## Co zostało użyte?
 Testy, jak i sama funkcja FizzBuzz została napisana w języku C++, z użyciem biblioteki gtest.
+## Schemat blokowy funkcji
+![Schemat blokowy](schemat_blokowy.PNG)
 ## Wnioski
 Warto pisać testy jednostkowe dla funkcji aby sprawdzić, czy działa ona poprawnie. Można wtedy wyeliminować ewentualne błędy.
-## Schemat blokowy funkcji
-![Schemat blokowy](schemat blokowy.PNG)
