@@ -11,3 +11,4 @@ Zostały napisane testy, które sprawdzają czy napisana funkcja działa poprawn
 Testy, jak i sama funkcja FizzBuzz została napisana w języku C++, z użyciem biblioteki gtest.
 ## Wnioski
 Warto pisać testy jednostkowe dla funkcji aby sprawdzić, czy działa ona poprawnie. Można wtedy wyeliminować ewentualne błędy.
+## Schemat blokowy funkcji
