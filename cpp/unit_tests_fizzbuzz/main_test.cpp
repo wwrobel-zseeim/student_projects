@@ -15,8 +15,10 @@ TEST(FizzBuzzTest, ExpectFizzBuzz) {
 	EXPECT_EQ(fizzbuzz(15), "FizzBuzz");
 }
 
+TEST(FizzBuzzTest, ExpectNothing) {
+	EXPECT_EQ(fizzbuzz(8), "");
+}
 
-// ... inne testy ...
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
