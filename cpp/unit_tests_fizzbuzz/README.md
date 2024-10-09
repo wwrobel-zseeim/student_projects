@@ -12,3 +12,4 @@ Testy, jak i sama funkcja FizzBuzz została napisana w języku C++, z użyciem b
 ## Wnioski
 Warto pisać testy jednostkowe dla funkcji aby sprawdzić, czy działa ona poprawnie. Można wtedy wyeliminować ewentualne błędy.
 ## Schemat blokowy funkcji
+![Schemat blokowy](schemat blokowy.PNG)
