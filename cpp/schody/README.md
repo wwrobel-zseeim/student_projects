@@ -57,6 +57,3 @@ Głębokość schodów: **25-32 cm**
 	</tr>
 </table>
 
-# Testy
-
-
