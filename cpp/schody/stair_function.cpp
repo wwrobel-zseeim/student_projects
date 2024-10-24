@@ -3,6 +3,11 @@
 
 using namespace std;
 
+int minHeight = 160;
+int maxHeight = 180;
+int minLength = 250;
+int maxLength = 320;
+
 class StairResults {
 
 	int levels;
@@ -62,13 +67,13 @@ class StairResults {
 };
 
 StairResults* getStairResults(int lk, int hk) {
-	if(lk < 160) {
+	if(lk < minHeight) {
 		return new StairResults(1);
 	}
 	int height;
 	int n;
 	bool initialized = false;
-	for(int i = 160; i <= 180; i++) {
+	for(int i = minHeight; i <= maxHeight; i++) {
 		if(hk % i == 0) {
 			height = i;
 			n = round(hk / i);
@@ -82,7 +87,7 @@ StairResults* getStairResults(int lk, int hk) {
 	if(n * length != lk) {
 		return getStairResults(lk - 1, hk);	
 	}
-	if(length < 250 || length > 320) {
+	if(length < minLength || length > maxLength) {
 		return new StairResults(2);	
 	}
 	return new StairResults(n, length, height, lk);
