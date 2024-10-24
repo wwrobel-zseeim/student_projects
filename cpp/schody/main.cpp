@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -7,44 +8,73 @@ class StairResults {
 	int levels;
 	int ls;
 	int hs;
+	int lk;
+	int error;
 
 	public:
-		StairResults(int levels, int ls, int hs) {
+		StairResults(int levels, int ls, int hs, int lk) {
 			this -> levels = levels;
 			this -> ls = ls;
 			this -> hs = hs;
+			this -> lk = lk;
+		}
+
+		StairResults(int error) {
+			this -> error = error;
 		}
 
 		void printResults() {
+			if(this -> error == 1) {
+				cout<<"Nie da się stworzyć ergonomicznych schodów dla tej wysokości";
+				return;
+			}
+			if(this -> error == 2) {
+				cout<<"Nie da się stworzyć ergonomicznych schodów dla tej długości";
+				return;			
+			}
 			cout<<"Wyniki: "<<endl;
 			cout<<"Ilość stopni: "<<this -> levels<<endl;
 			cout<<"Wysokość stopnia: "<<this -> hs<<endl;
 			cout<<"Głębokość stopnia: "<<this -> ls<<endl;
+			cout<<"Długość schodów: "<<this -> lk<<endl;
 		}
 
 };
 
-StairResults* getStairResults(int hk, int lk) {
-	int desiredHeight;	
-	for(int i = 16; i <= 18; i++) {
-		if(hk % i = 0) {
-			desiredHeight = i;		
+StairResults* getStairResults(int lk, int hk) {
+	if(lk < 160) {
+		return new StairResults(1);
+	}
+	int height;
+	int n;
+	bool initialized = false;
+	for(int i = 160; i <= 180; i++) {
+		if(hk % i == 0) {
+			height = i;
+			n = round(hk / i);
+			initialized = true;	
 		}
 	}
-	int restHeight;
-	if(desiredHeight == null) {
-		restHeight = desiredHeight ;
+	if(!initialized) {
+		return new StairResults(1);
 	}
-	return new StairResults(10, 5, 5);
+	int length = round(lk / n);
+	if(n * length != lk) {
+		return getStairResults(lk - 1, hk);	
+	}
+	if(length < 250 || length > 320) {
+		return new StairResults(2);	
+	}
+	return new StairResults(n, length, height, lk);
 }
 
 int main(){
 	int hk, lk;
-	cout<<"Podaj wysokość klatki schodowej: ";
+	cout<<"Podaj wysokość klatki schodowej (w mm): ";
 	cin>>hk;
-	cout<<"Podaj długość klatki schodowej: ";
+	cout<<"Podaj długość klatki schodowej (w mm): ";
 	cin>>lk;
-	StairResults* results = getStairResults(hk, lk);
+	StairResults* results = getStairResults(lk, hk);
 	results -> printResults();
 	return 0;
 }
