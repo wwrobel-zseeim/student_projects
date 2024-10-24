@@ -57,3 +57,6 @@ Głębokość schodów: **25-32 cm**
 	</tr>
 </table>
 
+# Testy
+
+W pliku main_test.cpp załączono testy automatyczne napisane z użyciem biblioteki gtest dla podanych w tabeli przykładowych wartości wartości

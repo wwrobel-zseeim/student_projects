@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 #include "stair_function.cpp"
 
 using namespace std;

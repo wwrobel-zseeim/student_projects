@@ -1,3 +1,6 @@
+#include <iostream>
+#include <cmath>
+
 using namespace std;
 
 class StairResults {
@@ -38,6 +41,22 @@ class StairResults {
 
 		bool hasError() {
 			return this -> error > 0;
+		}
+
+		int getLevels() {
+			return this -> levels;
+		}
+
+		int getStairHeight() {
+			return this -> hs;		
+		}
+
+		int getStairLength() {
+			return this -> ls;		
+		}
+
+		int getTotalStairsLength() {
+			return this -> lk;
 		}
 
 };
