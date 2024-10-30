@@ -157,7 +157,9 @@ StairResults* getStairResults(int lk, int hk) {
 </table>
 
 <center>
+
 ![schody](schody.png)
+
 </center>
 
 # Testy
