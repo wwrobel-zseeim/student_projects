@@ -156,6 +156,8 @@ StairResults* getStairResults(int lk, int hk) {
 	</tr>
 </table>
 
+![schody](schody.png)
+
 # Testy
 
 W pliku main_test.cpp załączono testy automatyczne napisane z użyciem biblioteki gtest dla podanych w tabeli przykładowych wartości wartości
