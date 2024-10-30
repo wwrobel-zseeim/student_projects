@@ -116,7 +116,8 @@ StairResults* getStairResults(int lk, int hk) {
 		return new StairResults(2);	
 	}
 	return new StairResults(n, length, height, lk);
-}```
+}
+```
 
 # Przykładowe wartości
 
