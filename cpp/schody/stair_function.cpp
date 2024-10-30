@@ -78,6 +78,7 @@ StairResults* getStairResults(int lk, int hk) {
 			height = i;
 			n = round(hk / i);
 			initialized = true;	
+			break;
 		}
 	}
 	if(!initialized) {

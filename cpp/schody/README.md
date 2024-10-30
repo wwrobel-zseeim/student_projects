@@ -102,7 +102,8 @@ StairResults* getStairResults(int lk, int hk) {
 		if(hk % i == 0) {
 			height = i;
 			n = round(hk / i);
-			initialized = true;	
+			initialized = true;
+			break;
 		}
 	}
 	if(!initialized) {
@@ -156,12 +157,12 @@ StairResults* getStairResults(int lk, int hk) {
 	</tr>
 </table>
 
-<center>
-
 ![schody](schody.png)
-
-</center>
 
 # Testy
 
 W pliku main_test.cpp załączono testy automatyczne napisane z użyciem biblioteki gtest dla podanych w tabeli przykładowych wartości wartości
+
+# Scanariusz użytkowania
+
+
