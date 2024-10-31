@@ -163,6 +163,5 @@ StairResults* getStairResults(int lk, int hk) {
 
 W pliku main_test.cpp załączono testy automatyczne napisane z użyciem biblioteki gtest dla podanych w tabeli przykładowych wartości wartości
 
-# Scanariusz użytkowania
 
 
