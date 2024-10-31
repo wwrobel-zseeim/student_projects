@@ -12,7 +12,7 @@ Głębokość schodów: **25-32 cm**
 # Działanie programu
 
 1. Użytkownik podaje długość i wysokość w milimetrach miejsca, w którym chce zmieścić schody
-2. Program sprawdza, czy schody się zmieszczą dzieląc dostępną wysokość przez kolejne liczby z zakresu [160;180]
+2. Program sprawdza, czy schody się zmieszczą dzieląc dostępną wysokość przez kolejne liczby z zakresu [160;180] w zbiorze liczb naturalnych
 3. Gdy program znajdzie najmniejszy dzielnik wysokości dostępnej przestrzeni ustawia liczbę schodów na zaokrągloną w górę wartość dzielenia długości dostępnej przestrzeni przez dzielnik z podanego wyżej zakresu
 4. Jeżeli program nie znajdzie dzielnika wysokości dla jakiejkolwiek liczby z zakresu, zwraca wiadomość, że nie można stworzyć ergonomicznych schodów dla tej wysokości
 5. Program dzieli dostępną długość na liczbę schodów, uzyskując długość jednego schodu
