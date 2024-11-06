@@ -122,6 +122,7 @@ StairResults* getStairResults(int lk, int hk) {
 
 # Przykładowe wartości
 
+<small>Tab 1</small>
 <table>
 	<tr>
 		<th>Wysokość klatki schodowej</th>
@@ -161,7 +162,7 @@ StairResults* getStairResults(int lk, int hk) {
 
 # Testy
 
-W pliku main_test.cpp załączono testy automatyczne napisane z użyciem biblioteki gtest dla podanych w tabeli przykładowych wartości wartości
+W pliku main_test.cpp załączono testy automatyczne napisane z użyciem biblioteki gtest dla podanych w tabeli **Tab 1**
 
 
 
