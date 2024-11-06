@@ -66,6 +66,19 @@ class StairResults {
 
 };
 
+
+/*******************************
+
+nazwa: getStairResults
+opis: zwraca obiekt zawierający informacje o ilości schodów, 
+wysokości, głębokości jednego stopnia oraz końcowej długości schodów
+parametry: 
+- lk (liczba całkowita, długość klatki schodowej w milimetrach)
+- hk (liczba całkowita, wysokość klatki schodowej w milimetrach)
+zwracany typ: StairResults
+autor: Wojciech W
+
+*******************************/
 StairResults* getStairResults(int lk, int hk) {
 	if(lk < minHeight) {
 		return new StairResults(1);
