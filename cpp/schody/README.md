@@ -122,7 +122,7 @@ StairResults* getStairResults(int lk, int hk) {
 
 # Przykładowe wartości
 
-<small>Tab 1</small>
+<sub>Tab 1</sub>
 <table>
 	<tr>
 		<th>Wysokość klatki schodowej</th>
