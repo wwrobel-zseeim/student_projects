@@ -11,5 +11,6 @@ int main(){
 	cin>>lk;
 	StairResults* results = getStairResults(lk, hk);
 	results -> printResults();
+	cout<<endl;
 	return 0;
 }
