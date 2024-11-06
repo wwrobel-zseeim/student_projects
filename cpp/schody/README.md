@@ -162,7 +162,7 @@ StairResults* getStairResults(int lk, int hk) {
 
 # Testy
 
-W pliku main_test.cpp załączono testy automatyczne napisane z użyciem biblioteki gtest dla podanych w tabeli **Tab 1**
+W pliku main_test.cpp załączono testy automatyczne napisane z użyciem biblioteki gtest dla podanych w tabeli *Tab 1*
 
 
 
